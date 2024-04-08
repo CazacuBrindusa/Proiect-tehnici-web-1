@@ -1,0 +1,149 @@
+.cls_bar{
+  flex: 1;
+  padding: 20px;
+  border: 1px solid rgb(24, 3, 92);
+}
+
+body {
+  background-image: linear-gradient(rgba(71, 67, 67, 0.6), rgba(237, 186, 186, 0.6)), url('resurse/background-img.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+  
+@media(max-width: 700px) {
+  body {
+    background-image: linear-gradient(rgba(90, 74, 89, 0.6), rgba(237, 186, 222, 0.6)), url("resurse/background-img3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+.p2:nth-of-type(2)
+{
+  text-align: left;
+}
+
+.cls_header{
+  flex: 1;
+  padding: 20px;
+  border: 1px solid rgb(24, 3, 92);
+  display: flex;
+  color:brown;
+}
+
+.cls_h{
+  color: brown;
+  text-align: center;
+}
+
+.cls_linkuri{
+  color: rgb(15, 3, 52);
+}
+
+.cls_linkuri:hover {
+  transition: 0s;
+  animation: ambele-animatii 5s linear infinite;
+}
+
+@keyframes ambele-animatii {
+  0% {
+    filter: hue-rotate(0deg);
+    color: rgb(15, 3, 52);
+    text-decoration-style: double;
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+    color: blueviolet;
+    text-decoration-style: wavy;
+  }
+}
+
+.cls_img{
+  align-content: center;
+  height: 50%;
+  width: 75%;
+}
+
+#generalitati{
+  display: flex;
+}
+
+#prezentare{
+  display: flex;
+}
+
+#genealogia{
+  display: flex;
+}
+
+#personajele{
+  display: flex;
+}
+
+.cls_main{
+    padding: 20px;
+}
+
+.cls_body{
+    color:black;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: rgb(24, 3, 92);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    padding: 25px;
+    width: 175px;
+    height: 75px;
+  }
+
+  .dropdown-container {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 5%;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(29, 28, 28);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;     
+    color: rgb(228, 89, 89);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(228, 89, 89);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(29, 28, 28);
+    color:aqua;
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: rgb(63, 32, 167);}

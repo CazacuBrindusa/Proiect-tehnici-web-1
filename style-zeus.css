@@ -1,0 +1,146 @@
+body {
+  display: grid;
+  grid-template-areas: 'fulger' 'container' 'h1' 'header' 'main';
+  color: black;
+  background-image: linear-gradient(rgba(71, 67, 67, 0.6), rgba(237, 186, 186, 0.6)), url('resurse/background-img.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cls_fulger{
+  margin-bottom: 4px;
+  margin-left: 0;
+  font-size: 0; 
+  display: flex;
+}
+
+.cls_fulger div{
+  background-image: linear-gradient(rgba(116, 105, 115, 0.6), rgba(207, 171, 171, 0.6)), url('resurse/fulger-zeus.jpg');
+  width: 110px;
+  height: 150px;
+  font-size: initial;
+}
+
+.cls_fulger:hover div:nth-of-type(odd){
+  animation: miscare 2s infinite alternate;
+}
+
+.cls_fulger:hover div:nth-of-type(even){
+  animation: miscare 2s infinite alternate-reverse;
+}
+
+@keyframes miscare {
+  0% {
+    transform: translateY(0); /* Imaginea este inițial la poziția sa normală */
+  }
+  50% {
+    transform: translateY(-20px); /* La jumătatea animației, imaginea este deplasată în sus cu 20px */
+  }
+  100% {
+    transform: translateY(0); /* La finalul animației, imaginea se întoarce la poziția sa normală */
+  }
+}
+
+.cls_header {
+  grid-area: header;
+  display: flex;
+}
+
+.cls_h1 {
+  grid-area: h1;
+  color: brown;
+  text-align: center;
+}
+
+.cls_main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.cls_bar {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.cls_hbar {
+  color: brown;
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.cls_h {
+  color: brown;
+  text-align: center;
+}
+
+#imagine,
+#generalitati,
+#prezentare {
+  display: flex;
+}
+
+.cls_animal{
+  float: right;
+  height:200px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(24, 3, 92);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  padding: 25px;
+  width: 175px;
+  height: 75px;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 5%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(29, 28, 28);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px;     
+  color: rgb(228, 89, 89);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(228, 89, 89);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(29, 28, 28);
+  color:aqua;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(63, 32, 167);}
